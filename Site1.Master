@@ -1,0 +1,111 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="LibraryManagement.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+    <%-- bootsrap css --%>
+    <link href="Bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <%-- datatables css --%>
+    <link href="Datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <%-- fontawesome css --%>
+    <link href="Fontawesome/css/all.css" rel="stylesheet" />
+    <%-- custom css --%>
+    <link href="css/Custom.css" rel="stylesheet" />
+    <%-- bootstrap js --%>
+    <script src="Bootstrap/js/jquery.js"></script>
+    <script src="Bootstrap/js/bootstrap.bundle.js"></script>
+
+    <%-- datatables js --%>
+    <script src="Datatables/js/jquery.dataTables.min.js"></script>
+    <%-- fontawesome js --%>
+    <script src="Fontawesome/js/all.js"></script>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+        
+                
+    <nav class="navbar navbar-expand-md navbar-light py-2">
+        <div class="ps-2">
+            <a class="navbar-brand" href="#">
+                <img src="images/books.png" width="30px" height="30px" alt="logo" /> E-Library     
+            </a>
+        </div>
+          
+        <button class="navbar-toggler me-2" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto ms-md-0 ms-2">
+              <li class="nav-item active ">
+                <a class="nav-link" href="HomePage.aspx">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Terms</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav ms-md-0 ms-2">
+              <li class="nav-item active">
+                <asp:LinkButton class="nav-link" ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">View Books</asp:LinkButton>
+              </li>
+              <li class="nav-item active">
+                <asp:LinkButton class="nav-link" ID="LinkButton2" runat="server" OnClick="LinkButton2_Click" >User Login</asp:LinkButton>
+              </li>
+              <li class="nav-item active">
+                <asp:LinkButton class="nav-link" ID="LinkButton3" runat="server" OnClick="LinkButton3_Click" >Sign Up</asp:LinkButton>
+              </li>
+                <li class="nav-item active">
+                <asp:LinkButton class="nav-link" ID="LinkButton4" runat="server" Visible="False" OnClick="LinkButton4_Click">Logout</asp:LinkButton>
+              </li>
+                <li class="nav-item active">
+                <asp:LinkButton class="nav-link" ID="LinkButton5" runat="server" OnClick="LinkButton5_Click" Visible="False">Hello User</asp:LinkButton>
+              </li>
+            </ul>
+        </div>
+   
+    </nav>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <footer>
+            <div class="container-fluid custom-footer1">
+                <div class="row">
+                    <div class="col-12 text-center pt-1 pb-1">
+                            <asp:LinkButton ID="LinkButton7" class="custom-footer-links px-2" runat="server" OnClick="LinkButton7_Click">Admin Login</asp:LinkButton>
+                            <asp:LinkButton ID="LinkButton6" class="custom-footer-links px-2" runat="server" OnClick="LinkButton6_Click" Visible="False">Author Management</asp:LinkButton>
+                            <asp:LinkButton ID="LinkButton8" class="custom-footer-links px-2" runat="server" OnClick="LinkButton8_Click" Visible="False">Publisher Management</asp:LinkButton>
+                            <asp:LinkButton ID="LinkButton9" class="custom-footer-links px-2" runat="server" OnClick="LinkButton9_Click" Visible="False">Book Inventory</asp:LinkButton>
+                            <asp:LinkButton ID="LinkButton10" class="custom-footer-links px-2" runat="server" OnClick="LinkButton10_Click" Visible="False">Book Issuing</asp:LinkButton>
+                            <asp:LinkButton ID="LinkButton11" class="custom-footer-links px-2" runat="server" OnClick="LinkButton11_Click" Visible="False">Member Management</asp:LinkButton>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid custom-footer2 pt-1 pb-1">
+                <div class="row">
+                    <div class="col-12 text-center ">
+                        &copy All Rights Reserved - <a href="#">Anish</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </form>
+</body>
+</html>

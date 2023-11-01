@@ -1,0 +1,37 @@
+﻿.custom-footer1 {
+    background-color: #FEA47F;
+}
+.custom-footer1 a{
+    color: white;
+    text-decoration: none;
+}
+    .custom-footer1 a:hover {
+        color: darkred;
+        /*text-decora*//*t*//*ion: underline;*/
+    }
+.custom-footer2 {
+    color: white;
+    background-color: #F97F51;
+}
+.custom-footer2 a{
+    color: white;
+    text-decoration: none;
+}
+    .custom-footer2 a:hover {
+        color: darkred ;
+        /*text-decoration: underline;*/
+    }
+
+
+/*home page css
+*/
+.section1 h1{
+    font-weight: 600;
+}
+.section2 h3,h5 {
+    font-weight: 600;
+}
+
+.button-width{
+    width: 100%;
+}
