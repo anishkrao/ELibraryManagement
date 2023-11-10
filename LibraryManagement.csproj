@@ -2156,7 +2156,7 @@
     <Content Include="UserProfile.aspx" />
     <Content Include="ViewBooks.aspx" />
     <Content Include="Web.config" />
-    <Content Include="index.aspx" />
+    <Content Include="HomePage.aspx" />
     <Content Include="UserLogin.aspx" />
     <Content Include="SignUp.aspx" />
   </ItemGroup>
@@ -2211,12 +2211,12 @@
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
-    <Compile Include="index.aspx.cs">
-      <DependentUpon>index.aspx</DependentUpon>
+    <Compile Include="HomePage.aspx.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="index.aspx.designer.cs">
-      <DependentUpon>index.aspx</DependentUpon>
+    <Compile Include="HomePage.aspx.designer.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserLogin.aspx.cs">
       <DependentUpon>UserLogin.aspx</DependentUpon>
